@@ -1,10 +1,8 @@
-<h1 align="center">Public Repository</h1> 
-
-<p align="center">Public repository for sharing work and documenting projects</p>
+<h1 align="center"Deploy Custom Azure NetApp Files Monitoring, Workbook, and Alerting</h1>
 
 ## Links
 
-- [GitHub Public Repo](https://github.com/bsonnek/Public "Bsonnek's Public Repo")
+- [GitHub Public Repo](https://github.com/bsonnek "Bsonnek's Public Repo")
 
 - [Find Me on LinkedIn](https://www.linkedin.com/in/blairsonnek "Connect On LinkedIn")
 
@@ -14,13 +12,14 @@
 - Azure Monitor Workbooks
 - PowerShell Functions for Azure Function Apps
 - Logic Apps
-- And Other resources for managing large scale Azure Lighthouse Environments
+
 
 ## Built With
 
 - PowerShell
 - KQL
-
+- ARM Templates
+- Logic Apps
 
 
 ## Author
