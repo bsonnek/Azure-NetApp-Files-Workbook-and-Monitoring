@@ -1,16 +1,13 @@
-<h1 align="center"Deploy Custom Azure NetApp Files Monitoring, Workbook, and Alerting</h1>
+<h1 align="center" Deploy Custom Azure NetApp Files Monitoring, Workbook, and Alerting</h1>
 
 ## Links
 
-- [GitHub Public Repo](https://github.com/bsonnek "Bsonnek's Public Repo")
-
-- [Find Me on LinkedIn](https://www.linkedin.com/in/blairsonnek "Connect On LinkedIn")
+- [Azure NetApp Files - ReadMe](https://github.com/bsonnek/Azure-NetApp-Files-Workbook-and-Monitoring/tree/main/ANF-MonitoringAndAlerting))
 
 
 ## What You'll Find in this Public Repository
 - PowerShell Automation Runbooks
 - Azure Monitor Workbooks
-- PowerShell Functions for Azure Function Apps
 - Logic Apps
 
 
