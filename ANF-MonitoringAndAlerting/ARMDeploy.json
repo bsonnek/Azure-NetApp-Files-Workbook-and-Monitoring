@@ -77,7 +77,7 @@
                 "logProgress": false,
                 "logActivityTrace": 0,
                 "publishContentLink": {
-                    "uri": "https://raw.githubusercontent.com/bsonnek/Public/main/ANF-MonitoringAndAlerting/RB-PRD-CU-NetAppFiles-SingleSub.ps1",
+                    "uri": "https://raw.githubusercontent.com/bsonnek/Azure-NetApp-Files-Workbook-and-Monitoring/main/ANF-MonitoringAndAlerting/RB-PRD-CU-NetAppFiles-SingleSub.ps1",
                     "version": "1.0.0.0"
                 }
             }
