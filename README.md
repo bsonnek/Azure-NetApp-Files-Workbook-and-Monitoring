@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Azure NetApp Files - ReadMe](https://github.com/bsonnek/Azure-NetApp-Files-Workbook-and-Monitoring/tree/main/ANF-MonitoringAndAlerting))
+- [Azure NetApp Files - ReadMe](https://github.com/bsonnek/Azure-NetApp-Files-Workbook-and-Monitoring/tree/main/ANF-MonitoringAndAlerting)
 
 
 ## What You'll Find in this Public Repository
