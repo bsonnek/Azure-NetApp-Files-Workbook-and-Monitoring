@@ -1,15 +1,16 @@
 
 ##  **Deploy** Custom Azure NetApp Files Monitoring and Alerting
-**The current limitations with Azure NetApp Files in the Azure Portal is the lack of Insights workbooks and Diagnostic Logging on the ANF resource. The solution provided in the deployment below, will create a custom log table in Log Analytics, and also an Azure Insights Workbook to visualize and monitor the health of all ANF resources in a subscription. There are also alerts for low storage and no snapshots that can be triggered from the automation runbook**
+
+**The limitations with Azure NetApp Files in the Azure Portal are the lack of Insights workbooks and Diagnostic Logging on the ANF resource. The solution provided in the deployment will create a custom log table in Log Analytics, and also an Azure Monitor Workbook to visualize and monitor the health of all ANF resources in a subscription. There are also alerts for low storage and no snapshots that can be triggered from the automation runbook**
 
 #### **Summary of Steps**
 TLDR - Brief Steps for Deployment:
  - Deploy this solution in the same Subscription as your Azure NetApp Files volumes. 
  - Create a New Resource Group - Example "RG-PRD-ANF-CustomLogging
- - **Do Not Change the Log Analytics Workspace Name** - This will break the Workbook paramaters and query.
- - Once The Deployment Starts - Go add the Managed Identity to "Reader" permissions on the Subscription of the Resource Group. Follow Instructions.
+ - **Do Not Change the Log Analytics Workspace Name** - This will break the Workbook parameters and query.
+ - Once The Deployment Starts - Go add the Automation Account's Managed Identity to "Reader" permissions on the Subscription of the Resource Group. Follow Instructions.
  - The runbook should automatically run on a schedule every 3 hours and populate the Workbook. If not make sure to follow these steps exactly as written.
- - Deployment will take aproximatly 5 minutes to complete.
+ - Deployment will take approximately 5 minutes to complete.
 
 **Deploy ANF Monitoring and Alerting**:  
 **ATTENTION - Create a New Azure Resource Group During the Deployment**
@@ -20,7 +21,7 @@ TLDR - Brief Steps for Deployment:
 ## Instructions After Deployment
 **[Follow These Instructions After the Deployment](https://github.com/bsonnek/Azure-NetApp-Files-Workbook-and-Monitoring/blob/main/ANF-MonitoringAndAlerting/Instructions.md)**
 
-### This is a custom Azure NetApp Files deployment script that will deploy 6 resources into an Resource Group. Please Create a new Resource Group during the deployment.
+### This is a custom Azure NetApp Files deployment script that will deploy 6 resources into a Resource Group. Please Create a new Resource Group during the deployment.
 List of Az Resources and purpose:
  - Automation Account:
 	 - Variables - Environment Variables used in the Runbook to Trigger Logic Apps and write logs to a custom table in Log Analytics Workspace.
@@ -28,7 +29,7 @@ List of Az Resources and purpose:
 		 - Cycle through all Azure NetApp Files and export the storage stats to the Log Analytics workspace custom table
 		 - Alerts will be triggered if the storage usage is above 90% for 30 minutes
          - Alerts will be triggered if the Snapshots are older than 2 days
- - Logic Apps (2) - You will need to finalize the last step to trigger an email, teams chat, etc.. 
+ - Logic Apps (2) - You must finalize the last step to trigger an email, teams chat, etc... 
 	 - LA-PRD-ANF-LowStorage - The Runbook will Invoke the API and Trigger this Logic App to alert
 	 - LA-PRD-ANF-NoSnapshot - The Runbook will Invoke the API and Trigger this Logic App to alert
  - Log Analytics Workspace
