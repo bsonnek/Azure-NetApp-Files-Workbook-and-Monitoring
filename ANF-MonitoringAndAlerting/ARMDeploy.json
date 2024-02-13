@@ -368,8 +368,8 @@
             ],
             "properties": {
                 "contentLink": {
-                    "uri": "https://www.powershellgallery.com/api/v2/package/Az.Accounts/2.12.4",
-                    "version": "2.12.4"
+                    "uri": "https://www.powershellgallery.com/api/v2/package/Az.Accounts/2.15.1",
+                    "version": "2.15.1"
                 }
             }
         },
@@ -383,8 +383,8 @@
             ],
             "properties": {
                 "contentLink": {
-                    "uri": "https://www.powershellgallery.com/api/v2/package/Az.NetAppFiles/0.12.0",
-                    "version": "0.12.0"
+                    "uri": "https://www.powershellgallery.com/api/v2/package/Az.NetAppFiles/0.15.0",
+                    "version": "0.15.0"
                 }
             }
         },
